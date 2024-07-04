@@ -1,0 +1,353 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f1f5; /* Nude background */
+    color: #7a4d58; /* Dark gray text color */
+}
+
+nav {
+    background-color: #726a95; /* Purple background for navigation */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f0e6f4; /* White text color */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0e6f4; /* Light purple color on hover */
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section__container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #726a95; /* Purple text color */
+}
+
+.title {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    color: #524f4f; /* Dark gray text color */
+}
+
+.title span {
+    color: #bf7aa1; /* Light purple color for span text */
+}
+
+.description {
+    color: #8c8b8b; /* Light gray text color */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.action__btns {
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    background-color: #bf7aa1; /* Light purple button color */
+    color: #ffffff; /* White text color */
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9e548c; /* Darker purple color on hover */
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 5%;
+    margin-left: 65%;
+}
+
+/*  About Section */
+
+#about .section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+#about .content {
+    flex: 1; /* Take up remaining space */
+    max-width: 250px; /* Adjusted width */
+    margin-right: 20px; /* Added margin for spacing */
+    font-style: italic;
+}
+
+#about .subtitle {
+    color: #726a95; /* Purple text color */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+#about .title {
+    color: #524f4f; /* Dark gray text color */
+    font-size: 1.75rem;
+    font-style: arial;
+    margin-bottom: 30px;
+    
+}
+
+#about .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20%;
+}
+
+#about .about-text {
+    color: #8c8b8b; /* Light gray text color */
+    font-size: 1.2rem;
+   margin-left: 10s%;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+#about .about-image {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center image vertically */
+    margin-top: 30%;
+}
+
+#about .about-image img {
+    max-width: 60%; /* Adjusted image size */
+    height: auto;
+    border-radius: 50%; /* Rounded corners for oval shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    background-color: #f0e6f4; /* Light purple background */
+    padding: 80px 0;
+}
+
+#contact .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+
+    
+}
+
+#contact h2 {
+    color: #726a95; /* Purple text color */
+    font-size: 2rem;
+    margin-left: 35%;
+}
+
+#contact .phone-number {
+    color: #bf7aa1; /* Light purple text color */
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Education Section */
+#education {
+    background-color: #f0e6f4; /* Light purple background */
+    padding: 30px 0;
+}
+
+#education .section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+#education .content {
+    flex: 1; /* Take up remaining space */
+    max-width: 800px; /* Adjusted width */
+    margin-right: 20px; /* Added margin for spacing */
+    font-style: italic;
+
+}
+
+#education .subtitle {
+    color: #726a95; /* Purple text color */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#education .title {
+    color: #524f4f; /* Dark gray text color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#education .education-info {
+    text-align: left; /* Align text to the left */
+    margin-top: 20px;
+}
+
+#education .education-info p {
+    color: #8c8b8b; /* Light gray text color */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: bold; /* Bold font weight */
+    white-space: pre-line; /* Preserve line breaks and white spaces */
+    margin-left: 0; /* Remove default margin */
+}
+
+#education .education-info p:not(:last-child) {
+    margin-bottom: 10px; /* Bottom margin for paragraphs except the last one */
+}
+
+#education .education-photo {
+    margin-top: 20px;
+    max-width: 80%; /* Ensure the photo doesn't exceed container width */
+    overflow: hidden; /* Hide any overflow from the photo */
+    border-radius: 8px; /* Rounded corners for the photo */
+  
+}
+
+#education .education-photo img {
+    width: 45%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the photo covers the container */
+    border-radius: 8px; /* Match the container's border radius */
+    margin-left: 45%;
+}
+
+
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f8f1f5; /* Light background */
+    padding: 80px 0;
+}
+
+#portfolio .section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#portfolio .content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+
+}
+
+#portfolio .subtitle {
+    color: #726a95; /* Purple text color */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#portfolio .title {
+    color: #524f4f; /* Dark gray text color */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#portfolio .portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    height: 100%; /* Ensures all images are same height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images cover the entire container */
+    transition: transform 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+#portfolio .portfolio-item div {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover div {
+    opacity: 1; /* Fade in caption on hover */
+}
+
+
+
+
+
